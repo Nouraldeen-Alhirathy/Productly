@@ -1,0 +1,107 @@
+/* btn class start */
+
+.btn {
+  background: none;
+  border: solid 1px transparent;
+  border-radius: 4px;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: 0.8em 1.6em;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-primary {
+  border-color: var(--main-color);
+  background: var(--main-color);
+  color: var(--white-color);
+}
+
+.btn-secondary {
+  border: solid 1px var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--border-color);
+}
+
+.btn-primary:hover {
+  background: var(--main-color-600);
+  border-color: var(--main-color-600);
+}
+
+.btn-nobg {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.btn-icon::before {
+  display: inline-block;
+  content: url(./imgs/triangle.png);
+  width: 15px;
+  margin-right: 12px;
+  translate: 0 5px;
+}
+
+.btn-icon:hover::before {
+  animation: icon-rotate 0.5s forwards;
+  transform-origin: center center;
+}
+
+@keyframes icon-rotate {
+  0% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* btn Class End */
+
+
+/* Container Class Start */
+
+.container {
+  width: 100%;
+  padding-right: 0.8rem;
+  padding-left: 0.8rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Container Class End */
+
