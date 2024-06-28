@@ -672,3 +672,14 @@ ul {
 
 /* Footer End */
 
+/* Copyrights */
+
+body > p {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--text-color);
+}
+
+body > p span {
+  color: var(--main-color);
+}
